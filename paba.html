@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>paba main</title>
+  <style type = "text/css">
+    
+    *{margin: 0; padding: 0;}
+    ul{list-style: none;}
+    img{border: 0; vertical-align: 0;}
+    a{text-decoration: none; color: #000;}
+    
+    #header{
+      width: 100%; height: 90px;
+      background-color: #023586;
+      overflow: hidden;
+    }
+    
+    #header .head_align{
+      width: 1470px; height:90px;
+      margin: 0 auto;
+      text-align: center;
+      box-sizing: border-box;
+      padding:0px 15px;
+    }
+    
+    #header .gnb{
+      float:left;
+      overflow: hidden;
+    }
+    
+    #header .head_align> .gnb li{
+      float:left;
+      font-size: 11pt;
+      width: 120px; height:90px;
+/*      border:1px solid #ff0000;*/
+      line-height: 90px;
+      box-sizing: border-box;
+    }
+    
+    #header .head_align> .gnb li:hover{
+      border-bottom: 3px solid #ff0;
+    }
+      
+    
+    #header .head_align>.gnb a{
+      color:aliceblue;
+      display: block;
+    }
+    
+    
+    #header .logo{
+      float: left; 
+      color: aliceblue;
+      font-size: 25pt;
+      margin-left:150px; 
+      margin-top: 20px;
+    }
+    
+    #header .side_menu{
+      float:right;
+      margin-top: 25pt;
+    }
+    #header .side_menu li{
+    float: left;
+    margin-left: 15pt
+    }
+    
+    #header .side_menu a{
+      color:aliceblue;
+    }
+    
+    #section .main_banner{overflow: hidden;
+    margin-bottom: 100px;}
+    
+    #section .main_banner>div{
+      float:left;
+      width: 33.3333%;}
+    #section .main_banner>div img{width:100%}
+    
+    #section .promotion{
+      overflow: hidden;width: 1470px;margin: 0 auto;
+    }
+    
+    
+    #section .promotion_group{overflow: hidden;width:1470px;margin:0 auto;}
+    #section .promotion_group>li{
+      float: left;
+      width:25%; 
+    }
+    #section .promotion_group>li img{
+      width:90%; 
+    }
+     
+    #section .promotion h1{
+      width: 1280px;
+      font-size: 20pt;
+      margin-bottom: 20pt;
+      float: left;
+    }
+    
+    #section .promotion .second{
+      float: left;
+      font-size: 12pt;
+      border-bottom: 1pt solid black;
+      line-height: 40px;
+    }
+    #section .promotion>.promotion_group h2{
+      font-size: 11pt;
+      width: 80%;
+      margin-top: 15px;
+      margin-bottom: 5px;}
+    #section .promotion>.promotion_group p{
+      font-size: 8pt;
+      width: 80%
+    }
+    
+    #section .title {overflow: hidden;width:1470px;margin:0 auto;margin-top:50px;}
+
+    #section .title .pb{width: 1280px;
+      font-size: 20pt;
+      margin-bottom: 20pt;
+      float: left;}
+    #section .title .second{
+      float: left;
+      font-size: 12pt;
+      border-bottom: 1pt solid black;
+      line-height: 40px;
+    }
+    
+    
+    #section .story{width: 1470px; overflow: hidden;margin : 0 auto;}
+    #section .story li{ width :735px;float:left;}
+    .story .pb_story img{width: 366px; float:left;
+    }
+    .pb_story .one{
+      overflow: hidden; padding: 20px;
+    }
+    
+    .pb_story .two{overflow: hidden; padding: 20px; }
+    .pb_story .three{overflow: hidden;padding: 20px; }
+    .pb_story .four{overflow: hidden; padding: 20px; }
+    
+    .pb_story h4{
+      float:left; width: 260px; height:50px;
+      font-size:25px;
+      box-sizing: border-box;
+    }
+      .pb_story p{
+      float:left; width:260px;
+      height: 90px;
+      margin-top:60px;
+    }
+    
+    #section .magazine{width: 1470px; overflow: hidden;margin:0 auto;margin-top:50px;}
+    
+    #section .magazine .maga_title{widows: 1200px; font-size: 10pt;
+      margin-bottom: 20pt;
+      float: left;}
+    #section .magazine .second{
+      float: left;
+      font-size: 12pt;
+      border-bottom: 1pt solid black;
+      line-height: 40px;
+    }
+    #section .magazine .magazine_img{
+    overflow: hidden;
+    }
+    #section .magazine .magazine_img img{
+      width : 365px; float: left;
+    }
+    }
+    #section .magazine li{ width:33.3333%
+    }
+    
+    .magazine_img{
+      margin-top: 100px;
+    }
+    
+  /
+    
+    
+    #footer{
+      width: 100%; height: 100px;
+      background-color: #3b3b3b;
+      margin-top: 50px;
+    }
+    
+    #footer address{
+      width:1470px;
+      margin: 0 auto;
+      text-align: center;
+      font-style: normal;
+      line-height: 50px;
+      font-size: 10pt
+    }
+    
+    #footer span{
+      color:#ff3737;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div id="header">
+     <div class="head_align">
+      <ul class="gnb">
+        <li><a href="#">파바의 약속</a></li>
+        <li><a href="#">파바 매거진</a></li>
+        <li><a href="#">파바 스토리</a></li>
+        <li>
+          <a href="#">상품 안내</a>
+          <ul class = "sub">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </li>
+      </ul>
+      <h1 class="logo">PARIS BAGUETTE</h1>
+      <ul class="side_menu">
+        <li><a href="#">매장 정보</a></li>
+        <li><a href="#">주문 정보</a></li>
+        <li><a href="#">프로모션</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="section">
+    <div class="main_banner">
+      <div class="img1"><img src="img1.jpg" alt="bann1"></div>
+      <div class="img2"><img src="img2.jpg" alt="bann2"></div>
+      <div class="img3"><img src="img3.jpg" alt="bann3"></div>
+    </div>
+    <div class="promotion">
+       <h1>PROMOTION</h1>
+       <h2 class ="second">SHOW MORE</h2>
+      <ul class="promotion_group">
+        <li>
+          <img src="pr1.jpg" alt="pro1">
+          <h2>♥파리생제르맹 콜라보 스페셜 굿즈 4탄 파리생제르맹 카라비너 3단 우산♥</h2>
+          <p>READ MORE</p>
+        </li>
+        <li>
+          <img src="pr2.jpg" alt="pro2">
+          <h2>♥파바 M포인트 위크♥</h2>
+          <p>READ MORE</p>
+        </li>
+        <li>
+          <img src="pr3.jpg" alt="pro3">
+          <h2>♥1988 실키 롱-케익♥</h2>
+          <p>READ MORE</p>
+        </li>
+        <li>
+          <img src="pr4.jpg" alt="pro4">
+          <h2>♥파리올림픽♥ 팀 코리아 응원가자</h2>
+          <p>READ MORE</p>
+        </li>
+      </ul>
+    </div>
+    <div class="story">
+    <div class="title">
+       <h1 class="pb">PB STORY</h1>
+       <h2 class="second">SHOW MORE</h2>
+     </div>
+      <ul class = pb_story>
+        <li>
+          <img src="pb1.jpg" alt="story1">
+          <div class="one">
+            <h4>뜨거운 여름에는 와르르르 파바빙수</h4>
+            <p>뜨거운 여름을 맞이할 파리바게뜨 빙수 준비 완료</p>
+          </div>
+        </li>
+        <li>
+          <img src="pb2.jpg" alt="story2">
+          <div class="two">
+            <h4>COFFEE&AMP;CAKES 커피와 파바</h4>
+            <p>음~ 새로운 파바 디저트 케이크 한 입 음~</p>
+          </div>
+        </li>
+        <li>
+          <img src="pb3.jpg" alt="story3">
+          <div class="three">
+            <h4>[V-log] 콜롬비아 가자는 말이 농담이 아니었던 건에 대하여</h4>
+            <p> 카페 아다지오 100% 스페셜티 원두가 새로 나왔다는데 가만히 있을 수 있냐구요!!</p>
+          </div>
+        </li>
+        <li>
+          <img src="pb4.jpg" alt="story4">
+          <div class="four">
+          <h4>파리바게뜨 X 파리생제르맹이 선정한 Best 5</h4>
+          <p>Let's PARIS 파리바게뜨 X 파리생제르맹 선수들이 반한 파바 제품 5종</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="magazine">
+      <div class="maga_title">
+        <h1 class="pbm">PB MAGAZINE</h1>
+        <h2 class="second">SHOW MORE</h2>
+      </div>
+      <ul class="magazine_img">
+        <li><img src="maga1.jpg" alt="magazine"></li>
+        <li><img src="maga2.jpg" alt="magazine"></li>
+        <li><img src="maga3.jpg" alt="magazine"></li>
+        <li> 챔피언십 우승 축하 이벤트 </li>
+        <li> Let's PARIS </li>
+        <li> Let's PARIS </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="footer">
+    <address>이용약관|<span>개인정보처리방침</span>|이메일무단수집거부|영상정보처리기기운영관리방침</address>
+    <hr/>
+    <address>All Rights Reserved © PARIS BAGUETTE, PARIS CROISSANT CO., LTD. 경기도 성남시 중원구 사기막골로 31번길 18 (주)파리크리상</address>
+  </div>
+  
+</body>
+</html>

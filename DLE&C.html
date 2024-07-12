@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DLenc</title>
+  <style type="text/css">
+    *{margin:0; padding: 0;}
+    ul{list-style: none;}
+    img{border: 0; vertical-align: 0;}
+    a{text-decoration: none; color: #000;}
+
+    .clearFix:after{
+      content:"";
+      display: block;
+      clear:both;
+    }
+    
+    #header .header_bar{
+      width: 1200px; 
+      margin: 0 auto;
+      padding:20px;
+      box-sizing: border-box;
+    }
+    #header .logo{float: left;}
+    #header .gnb{float:left;}
+
+    #header .gnb li{
+      float:left;width:100px;
+      margin-left: 50px;
+      box-sizing: border-box; 
+      line-height: 30px;
+    }
+    #header .gnb>ul{
+ }
+
+    
+    
+    #header .etc{float: right; margin-left: 40px;}
+    #header .etc li{float:left; margin-left:20px;}
+  
+    #section{
+      width:100%; height: 900px;
+      margin: 0 auto;
+      background-image: url(dl_back.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    #section .contents{
+      width: 1552px; height: 900px;
+      margin: 0 auto;
+    box-sizing: border-box;}
+    
+    #section .contents_top .news{
+      text-align: right;
+      margin-right: 20px;
+      padding-top: 50px;
+      font-size: 12pt;
+      color: aliceblue;
+    }
+    #section .contents_top .innovation{
+      color: aliceblue;
+      text-align: center;
+      font-size: 50pt;
+      padding-bottom: 10px; padding-top: 70px;
+    }
+    #section .contents_top p{
+      text-align: center;
+      color: aliceblue;
+      padding-bottom: 50px;
+      font-size: 14pt;
+    }
+    
+    #section .contents_img{
+      overflow: hidden; 
+    }
+    #section .contents_img li{
+      width: 350px; height: 192px;
+      float: left; margin-left: 120px;
+      padding-top:150px; 
+      box-sizing: border-box;
+      background-size: cover;
+      color: aliceblue;
+      text-align: center;
+      background-position:center;
+      background-repeat: no-repeat;
+      border:5px solid rgba(240, 248, 255, 0);
+    }
+    
+    #section .contents_img li:hover{
+      border:5px solid aliceblue;
+    }
+    
+    #section .contents_img a{color: aliceblue;
+    }
+    #section .contents_img li:first-child{
+      background-image: url(dl_1.jpg);
+    }
+    #section .contents_img li:nth-child(2){
+      background-image: url(dl_2.jpg);
+    }
+    #section .contents_img li:last-child{
+      background-image: url(dl_3.jpg);
+    }
+    
+    #section .contents_bottom{
+      text-align: center;
+      margin: 40px;
+      padding-bottom: 30px;
+    }
+    
+    #section .contents_bottom p{
+      color: aliceblue;
+      padding-top: 50px; padding-bottom: 25px;
+    }
+    #section .contents_bottom h2{
+      font-size: 11pt; color: aliceblue;
+      width: 150px;
+      margin: 0 auto; padding: 20px;
+      border: 1pt solid aliceblue;
+    }
+    #section .channel{
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: 25px;
+      margin-left: 200px;}
+    
+    #section .channel li{
+      float: left;
+      color: aliceblue; font-size: 13pt;
+      margin-left: 100px; 
+    }
+    #section .channel li p{float: right;
+    padding: 5px;
+    }
+    
+    #footer{
+      background-color: lightgray;
+    }
+    #footer .footer_menu{
+      width: 1200px; margin: 0 auto;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    #footer .footer_menu li{
+      float: left; margin-left: 20px;
+      margin-top: 20px; font-size: 10pt;
+    }
+    #footer address{
+      text-align: center; margin-top: 30px; font-style: normal;
+      font-size: 10pt;
+    }
+    #footer span{
+      color: #00009a;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="header">
+   <div class="header_bar clearFix">
+    <h1 class = "logo"> <img src="dl_logo.png" alt="dl로고"></h1>
+    <div class="gnb clearFix">
+      <ul>
+        <li>
+          <a href="#">회사소개</a>
+          <ul class = "sub">
+            <li><a href="#"></a>기업정보</li>
+            <li><a href="#"></a>CEO 인사말</li>
+            <li><a href="#"></a>기업연혁</li>
+            <li><a href="#"></a>그룹사현황</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">사업소개</a>
+          <ul class="sub">
+            <li><a href="#"></a>사업개요</li>
+            <li><a href="#"></a>건축</li>
+            <li><a href="#"></a>주택</li>
+            <li><a href="#"></a>토목</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">기술혁신</a>
+          <ul class="sub">
+            <li><a href="#"></a>기술개발원소개</li>
+            <li><a href="#"></a>주요연구분야</li>
+            <li><a href="#"></a>지식재산권</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">지속가능경영</a>
+          <ul class="sub">
+            <li><a href="#"></a>정도경영</li>
+            <li><a href="#"></a>상생경영</li>
+            <li><a href="#"></a>품질경영</li>
+            <li><a href="#"></a>안전보건경영</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">투자정보</a>
+          <ul class="sub">
+            <li><a href="#"></a>그룹 Highlights</li>
+            <li><a href="#"></a>IR 자료실</li>
+            <li><a href="#"></a>재무정보</li>
+            <li><a href="#"></a>기업지배구조</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">홍보센터</a>
+          <ul class="sub">
+            <li><a href="#"></a>DL소식</li>
+            <li><a href="#"></a>홍보영상</li>
+            <li><a href="#"></a>CI/BI 소개</li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">인재채용</a>
+          <ul class="sub">
+            <li><a href="#"></a>인재상</li>
+            <li><a href="#"></a>인사제도</li>
+            <li><a href="#"></a>채용정보</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="etc">
+      <ul>
+        <li><img src="search.png" alt="돋보기메뉴"></li>
+        <li><a href="#"></a>ENG</li>
+        <li><img src="hambuger.png" alt="햄버거메뉴"></li>
+      </ul>
+    </div>
+   </div>
+  </div>
+  <div id="section">
+   <div class="contents">
+     <div class="contents_top">
+        <h2 class ="news">NEWS → </h2>
+        <h1 class ="innovation">INNOVATION</h1>
+        <p>기본을 지켜 혁신을 이루다.</p>
+      </div>
+    <div class="contents_img">
+      <ul>
+        <li><a href="#">Acro Seoul Forest</a></li>
+        <li><a href="#">1915 Canakkale Brid</a></li>
+        <li><a href="#">Petrochemical Plant</a></li>
+      </ul>
+    </div>
+    <div class="contents_bottom">
+      <p>대한민국 건설을 리드해온 DL이앤씨는<br>이제 종합설계시공(EPC)뿐만 아니라 토탈솔루션 사업자로서 도약합니다.</p>
+      <h2>사업소개 바로가기</h2>
+    </div>
+    <hr/>
+    <div class="channel">
+      <ul>
+        <li>DL이앤씨 디지털 채널 > </li>
+        <li><img src="youtube.png" alt="유튜브"><p>유튜브</p></li>
+        <li><img src="blog.png" alt="블로그"><p>블로그</p></li>
+        <li><img src="link.png" alt="링크"><p>링크드인</p></li>
+      </ul>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <div class="footer_menu">
+      <ul>
+        <li>전자공고</li>
+        <li>|</li>
+        <li>원가절감제안</li>
+        <li>|</li>
+        <li><span>개인정보처리방침</span></li>
+        <li>|</li>
+        <li>영상정보처리기기운영관리방침</li>
+        <li>|</li>
+        <li>이메일무단수집거부</li>
+        <li>|</li>
+        <li>사이트맵</li>
+        <li>|</li>
+        <li>사옥안내</li>
+        <li>|</li>
+        <li>고객문의</li>
+      </ul>
+    </div>
+    <address>서울 종로구 통일로 134 D타워 돈의문 COPYRIGHT (c) 2021 DL이앤씨 All RIGHTS RESERVED.</address>   
+  </div>
+</body>
+</html>
